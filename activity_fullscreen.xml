@@ -1,0 +1,87 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333333"
+    tools:context="com.example.bbb.FullscreenActivity" >
+
+    <FrameLayout
+        android:id="@+id/Welcome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#91c632" >
+
+        <TextView
+            android:id="@+id/versionNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="120dp"
+            android:text="ver 1.0"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="139dp"
+            android:layout_height="171dp"
+            android:layout_gravity="top|center"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/logo" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/webParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <WebView
+            android:id="@+id/webView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/floading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_overlay"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center" />
+    </FrameLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:src="@android:drawable/stat_notify_sync"
+        tools:ignore="ContentDescription"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="36dp"
+        android:layout_height="203dp"
+        android:layout_gravity="center|end"
+        android:background="@android:color/transparent"
+        tools:ignore="ContentDescription"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="36dp"
+        android:layout_height="203dp"
+        android:layout_gravity="center|start"
+        android:background="@android:color/transparent"
+        tools:ignore="ContentDescription"
+        android:visibility="gone" />
+
+</FrameLayout>
